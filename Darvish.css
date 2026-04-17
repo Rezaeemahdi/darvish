@@ -284,7 +284,9 @@ p  { color: var(--text-body); font-size: 1.05rem; font-weight: 300; }
   pointer-events: none;
   transition: opacity 0.4s ease;
 }
-.mobile-menu.open { opacity: 1; pointer-events: all; }
+.mobile-menu.open { 
+   Display: flex;
+   opacity: 1; pointer-events: all; }
 .mobile-menu a {
   font-family: 'EB Garamond', serif;
   font-size: 2.2rem;
