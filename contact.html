@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contatti e prenotazioni — Ristorante Persiano Darvish, Riviera Mussato 85, Padova." />
+  <title>Contatti — Ristorante Persiano Darvish</title>
+  <link rel="stylesheet" href="Darvish.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+<nav id="navbar"><div class="nav-container">
+  <a href="Darvish.html" class="nav-logo">
+    <img src="Darvish-logo.jpeg" alt="Darvish" class="nav-logo-img" />
+    <div class="nav-logo-text"><span class="logo-name">Darvish</span><span class="logo-tagline">Ristorante Persiano</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="Darvish.html" data-i18n="nav_home">Home</a></li>
+    <li><a href="menu.html" data-i18n="nav_menu">Menu</a></li>
+    <li><a href="about.html" data-i18n="nav_about">Chi Siamo</a></li>
+    <li><a href="gallery.html" data-i18n="nav_gallery">Galleria</a></li>
+    <li><a href="contact.html" data-i18n="nav_contact" class="active">Contatti</a></li>
+    <li><a href="contact.html" class="nav-reserve" data-i18n="nav_reserve">Prenota</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:1rem;">
+    <div class="lang-switcher"><button class="lang-btn active" data-lang="it">IT</button><button class="lang-btn" data-lang="en">EN</button></div>
+    <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
+  </div>
+</div></nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="Darvish.html" data-i18n="nav_home">Home</a><a href="menu.html" data-i18n="nav_menu">Menu</a>
+  <a href="about.html" data-i18n="nav_about">Chi Siamo</a><a href="gallery.html" data-i18n="nav_gallery">Galleria</a>
+  <a href="contact.html" data-i18n="nav_contact">Contatti</a>
+  <a href="contact.html" class="btn btn-gold" data-i18n="nav_reserve">Prenota</a>
+  <div class="mobile-lang"><button class="lang-btn active" data-lang="it">IT</button><button class="lang-btn" data-lang="en">EN</button></div>
+</div>
+
+<header class="page-hero ph-contact">
+  <div class="container page-hero-content">
+    <span class="section-label" style="color:var(--gold);display:block;margin-bottom:0.6rem;">دَرویش</span>
+    <h1 data-i18n="cont_h1">Contatti & Prenotazioni</h1>
+    <p data-i18n="cont_sub">Venite a trovarci sul canale — vi accoglieremo come ospiti di famiglia</p>
+  </div>
+</header>
+
+<main class="contact-section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- LEFT: Info -->
+      <div class="contact-info reveal-l">
+        <h3 data-i18n="cont_find">Come Trovarci</h3>
+
+        <div class="contact-item">
+          <div class="c-icon">📍</div>
+          <div>
+            <div class="c-label" data-i18n="lbl_addr">Indirizzo</div>
+            <div class="c-value">Riviera Albertino Mussato 85<br>35139, Padova (PD) — Italia</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="c-icon">📞</div>
+          <div>
+            <div class="c-label" data-i18n="lbl_phone">Telefono</div>
+            <div class="c-value"><a href="tel:+39049664048">+39 049 664048</a></div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="c-icon">🌐</div>
+          <div>
+            <div class="c-label">Website</div>
+            <div class="c-value"><a href="https://www.ristorantedarvish.com" target="_blank">ristorantedarvish.com</a></div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="c-icon">🕐</div>
+          <div>
+            <div class="c-label" data-i18n="lbl_hours">Orari</div>
+            <div class="hours-grid">
+              <span class="hours-day" data-i18n="hours_lt">Lun – Gio</span>
+              <span class="hours-time" data-i18n="hours_lv">18:30 – 23:30</span>
+              <span class="hours-day" data-i18n="hours_ft">Ven – Dom</span>
+              <span class="hours-time" data-i18n="hours_fv">11:30–14:30 · 18:30–23:30</span>
+            </div>
+            <p style="font-size:0.78rem;color:rgba(212,175,55,0.55);font-style:italic;margin-top:0.7rem;">
+              Si consiglia la prenotazione — i posti sono limitati.
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="c-icon">📷</div>
+          <div>
+            <div class="c-label" data-i18n="lbl_social">Seguici</div>
+            <div class="social-row" style="margin-top:0.5rem;">
+              <a href="https://www.instagram.com/ristorante_darvish/" target="_blank" class="social-ico" title="Instagram">📷</a>
+              <a href="https://www.ristorantedarvish.com" target="_blank" class="social-ico" title="Sito Web">🌐</a>
+              <a href="https://maps.google.com/?q=Riviera+Albertino+Mussato+85+Padova" target="_blank" class="social-ico" title="Google Maps">🗺️</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps embed -->
+        <div class="map-box">
+          <!--
+            🗺️  REPLACE THE IFRAME SRC BELOW WITH YOUR REAL GOOGLE MAPS EMBED LINK
+            To get it: Google Maps → Search your restaurant → Share → Embed a map → Copy HTML
+          -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.4!2d11.8761!3d45.4080!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eda48a5197a3f%3A0x1b6300934c3148bb!2sRiviera%20Albertino%20Mussato%2C%2085%2C%2035139%20Padova%20PD!5e0!3m2!1sit!2sit!4v1700000000000!5m2!1sit!2sit"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ristorante Persiano Darvish — Riviera Mussato 85, Padova"
+          ></iframe>
+          <!-- 🔼 Replace src above with your real Google Maps embed URL -->
+        </div>
+
+      </div>
+
+      <!-- RIGHT: Form -->
+      <div class="reveal-r">
+        <div class="form-box">
+          <h3 data-i18n="form_h">Inviaci un Messaggio</h3>
+
+          <form id="contact-form" novalidate>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="f-name" data-i18n="f_name">Nome e Cognome</label>
+                <input type="text" id="f-name" name="name" data-i18n-placeholder="f_name" placeholder="Nome e Cognome" autocomplete="name" />
+                <span class="form-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="f-email" data-i18n="f_email">Email</label>
+                <input type="email" id="f-email" name="email" placeholder="email@esempio.it" autocomplete="email" />
+                <span class="form-error"></span>
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="f-phone" data-i18n="f_phone">Telefono</label>
+                <input type="tel" id="f-phone" name="phone" placeholder="+39 049 …" autocomplete="tel" />
+              </div>
+              <div class="form-group">
+                <label for="f-subj" data-i18n="f_subj">Oggetto</label>
+                <select id="f-subj" name="subject">
+                  <option value="" data-i18n="f_opt0">Seleziona</option>
+                  <option value="res"  data-i18n="f_opt1">Prenotazione Tavolo</option>
+                  <option value="menu" data-i18n="f_opt2">Informazioni Menu</option>
+                  <option value="priv" data-i18n="f_opt3">Evento Privato</option>
+                  <option value="oth"  data-i18n="f_opt4">Altro</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="f-msg" data-i18n="f_msg">Il tuo messaggio</label>
+              <textarea id="f-msg" name="message" rows="5" placeholder="Scrivi qui il tuo messaggio..."></textarea>
+              <span class="form-error"></span>
+            </div>
+
+            <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;">
+              <span data-i18n="f_send">Invia Messaggio</span> &nbsp;→
+            </button>
+
+            <div id="form-success" class="form-success"></div>
+          </form>
+        </div>
+
+        <!-- Urgent reservation note -->
+        <div style="margin-top:1.5rem;padding:1.2rem 1.5rem;border:1px solid rgba(212,175,55,0.15);border-radius:2px;background:rgba(212,175,55,0.03);">
+          <p style="font-family:'EB Garamond',serif;font-style:italic;font-size:1.05rem;color:var(--gold);line-height:1.6;margin:0;">
+            Per prenotazioni urgenti o per lo stesso giorno, chiamateci direttamente al
+            <a href="tel:+39049664048" style="color:var(--gold-lt);font-weight:600;">+39 049 664048</a>.
+            <span style="color:var(--text-dim);font-size:0.9rem;"> — Si consiglia vivamente la prenotazione.</span>
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer><div class="container">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="Darvish-logo.jpeg" alt="Darvish" class="footer-logo" />
+      <span class="brand-name">Darvish</span>
+      <p data-i18n="foot_tag">Un piccolo gioiello persiano nel cuore di Padova.</p>
+      <div class="social-row">
+        <a href="https://www.instagram.com/ristorante_darvish/" target="_blank" class="social-ico">📷</a>
+        <a href="https://www.ristorantedarvish.com" target="_blank" class="social-ico">🌐</a>
+        <a href="tel:+39049664048" class="social-ico">📞</a>
+      </div>
+    </div>
+    <div class="footer-col"><h4 data-i18n="foot_links">Link Utili</h4><ul>
+      <li><a href="Darvish.html" data-i18n="nav_home">Home</a></li><li><a href="menu.html" data-i18n="nav_menu">Menu</a></li>
+      <li><a href="about.html" data-i18n="nav_about">Chi Siamo</a></li><li><a href="gallery.html" data-i18n="nav_gallery">Galleria</a></li>
+      <li><a href="contact.html" data-i18n="nav_contact">Contatti</a></li>
+    </ul></div>
+    <div class="footer-col"><h4 data-i18n="foot_hours">Orari</h4>
+      <p data-i18n="foot_h1">Lun–Gio: 18:30–23:30</p><p data-i18n="foot_h2">Ven: 11:30–14:30 / 18:30–23:30</p>
+      <p data-i18n="foot_h3">Sab: 11:30–14:30 / 18:30–23:30</p><p data-i18n="foot_h4">Dom: 11:30–14:30 / 18:30–23:30</p>
+    </div>
+    <div class="footer-col"><h4 data-i18n="foot_cont">Contatti</h4>
+      <p>Riviera Albertino Mussato 85<br>35139, Padova (PD)</p>
+      <p style="margin-top:.5rem;"><a href="tel:+39049664048" style="color:rgba(240,230,211,.4);">+39 049 664048</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p data-i18n="foot_copy">© 2025 Ristorante Persiano Darvish · Padova</p>
+    <div class="footer-bottom-links"><a href="#" data-i18n="foot_priv">Privacy</a><a href="#" data-i18n="foot_terms">Termini</a></div>
+  </div>
+</div></footer>
+
+<script src="Darvish.js"></script>
+</body>
+</html>

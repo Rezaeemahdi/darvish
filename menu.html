@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Menu — Ristorante Persiano Darvish, Padova. Antipasti, Kebab, Riso, Dolci persiani." />
+  <title>Menu — Ristorante Persiano Darvish</title>
+  <link rel="stylesheet" href="Darvish.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="Darvish.html" class="nav-logo">
+      <img src="Darvish-logo.jpeg" alt="Darvish" class="nav-logo-img" />
+      <div class="nav-logo-text">
+        <span class="logo-name">Darvish</span>
+        <span class="logo-tagline">Ristorante Persiano</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="Darvish.html"   data-i18n="nav_home">Home</a></li>
+      <li><a href="menu.html"    data-i18n="nav_menu" class="active">Menu</a></li>
+      <li><a href="about.html"   data-i18n="nav_about">Chi Siamo</a></li>
+      <li><a href="gallery.html" data-i18n="nav_gallery">Galleria</a></li>
+      <li><a href="contact.html" data-i18n="nav_contact">Contatti</a></li>
+      <li><a href="contact.html" class="nav-reserve" data-i18n="nav_reserve">Prenota</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="it">IT</button>
+        <button class="lang-btn"        data-lang="en">EN</button>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="Darvish.html"   data-i18n="nav_home">Home</a>
+  <a href="menu.html"    data-i18n="nav_menu">Menu</a>
+  <a href="about.html"   data-i18n="nav_about">Chi Siamo</a>
+  <a href="gallery.html" data-i18n="nav_gallery">Galleria</a>
+  <a href="contact.html" data-i18n="nav_contact">Contatti</a>
+  <a href="contact.html" class="btn btn-gold" data-i18n="nav_reserve">Prenota</a>
+  <div class="mobile-lang"><button class="lang-btn active" data-lang="it">IT</button><button class="lang-btn" data-lang="en">EN</button></div>
+</div>
+
+<!-- PAGE HERO -->
+<header class="page-hero ph-menu">
+  <div class="container page-hero-content">
+    <span class="section-label" style="color:var(--gold);display:block;margin-bottom:0.6rem;">دَرویش</span>
+    <h1 data-i18n="menu_h1">Il Menu</h1>
+    <p data-i18n="menu_sub">Cucina persiana autentica — preparata con amore e rispetto per la tradizione</p>
+  </div>
+</header>
+
+<!-- MENU -->
+<main class="menu-section">
+  <div class="container">
+
+    <!-- Tabs -->
+    <div class="menu-tabs reveal">
+      <button class="menu-tab active" data-tab="antipasti"  data-i18n="tab_ant">Antipasti</button>
+      <button class="menu-tab"        data-tab="bianca"     data-i18n="tab_bianc">Carne Bianca</button>
+      <button class="menu-tab"        data-tab="rossa"      data-i18n="tab_rossa">Carne Rossa</button>
+      <button class="menu-tab"        data-tab="bevande"    data-i18n="tab_bev">Bevande</button>
+      <button class="menu-tab"        data-tab="dolci"      data-i18n="tab_dol">Dolci & Tè</button>
+      <button class="menu-tab"        data-tab="pranzo"     data-i18n="tab_pranzo">Pranzo €15</button>
+    </div>
+
+    <!-- ======== ANTIPASTI ======== -->
+    <div class="menu-category active" id="cat-antipasti">
+      <div class="menu-cat-header">
+        <span class="section-label" data-i18n="cat_ant_h">Antipasti</span>
+        <div class="ornament-line"><div class="gem"></div></div>
+        <p data-i18n="cat_ant_s">Piccole delizie per iniziare il viaggio alla maniera persiana</p>
+      </div>
+      <div class="menu-list">
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Suppegio <span style="font-size:0.7em;color:rgba(212,175,55,0.5);font-style:normal;margin-left:0.5rem;">(in stagione)</span></h4>
+            <p class="desc-it">Zuppa di orzo</p>
+            <p class="desc-en">Barley soup</p>
+            <span class="menu-badge badge-season">Stagionale</span>
+            <span class="menu-badge badge-veg">Vegetariano</span>
+          </div>
+          <span class="menu-row-price">€ 6</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Dolmeh</h4>
+            <p class="desc-it">Involtini di foglie di vite con riso, mezzi ceci, carne di vitello, spezie</p>
+            <p class="desc-en">Vine leaf rolls stuffed with rice, split chickpeas, veal and spices</p>
+          </div>
+          <span class="menu-row-price">€ 10</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Kashk-e Bademjan</h4>
+            <p class="desc-it">Melanzane fritte con formaggio tipico persiano</p>
+            <p class="desc-en">Fried eggplants with traditional Persian cheese</p>
+            <span class="menu-badge badge-veg">Vegetariano</span>
+          </div>
+          <span class="menu-row-price">€ 9</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Kuku Sabzi</h4>
+            <p class="desc-it">Frittata di verdure miste</p>
+            <p class="desc-en">Fried mixed vegetable omelette</p>
+            <span class="menu-badge badge-veg">Vegetariano</span>
+          </div>
+          <span class="menu-row-price">€ 9</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Mirza Ghasemi</h4>
+            <p class="desc-it">Melanzane al forno con uova e aglio</p>
+            <p class="desc-en">Baked eggplant with eggs and garlic</p>
+            <span class="menu-badge badge-veg">Vegetariano</span>
+          </div>
+          <span class="menu-row-price">€ 9</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Antipasti Misti</h4>
+            <p class="desc-it">Dolmeh, Kashk-e-Bademjan, Kuku e Mirza Ghasemi</p>
+            <p class="desc-en">Mixed Persian starters: Dolmeh, Kashk-e-Bademjan, Kuku and Mirza Ghasemi</p>
+            <span class="menu-badge badge-chef">Consigliato</span>
+          </div>
+          <span class="menu-row-price">€ 13</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Khiar-Sur</h4>
+            <p class="desc-it">Cetrioli in salamoia</p>
+            <p class="desc-en">Pickled cucumbers</p>
+            <span class="menu-badge badge-veg">Vegetariano</span>
+          </div>
+          <span class="menu-row-price">€ 3</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Mast-e Khiar</h4>
+            <p class="desc-it">Cetrioli, yogurt e spezie</p>
+            <p class="desc-en">Cucumber, yogurt and spices</p>
+            <span class="menu-badge badge-veg">Vegetariano</span>
+          </div>
+          <span class="menu-row-price">€ 3</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Mast-e Musir</h4>
+            <p class="desc-it">Yogurt e aglio selvatico</p>
+            <p class="desc-en">Yogurt with wild garlic</p>
+            <span class="menu-badge badge-veg">Vegetariano</span>
+          </div>
+          <span class="menu-row-price">€ 5</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Torsci</h4>
+            <p class="desc-it">Verdure varie in sottoaceto</p>
+            <p class="desc-en">Various pickled vegetables</p>
+            <span class="menu-badge badge-veg">Vegetariano</span>
+          </div>
+          <span class="menu-row-price">€ 3</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ======== CARNE BIANCA ======== -->
+    <div class="menu-category" id="cat-bianca">
+      <div class="menu-cat-header">
+        <span class="section-label" data-i18n="cat_bianc_h">Carne Bianca</span>
+        <div class="ornament-line"><div class="gem"></div></div>
+        <p data-i18n="cat_bianc_s">Kebab e piatti di pollo con riso basmati e zafferano</p>
+      </div>
+      <div class="menu-list">
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Celo' Barg</h4>
+            <p class="desc-it">Riso bianco, pollo allo spiedo con zafferano</p>
+            <p class="desc-en">White basmati rice, grilled chicken with saffron</p>
+          </div>
+          <span class="menu-row-price">€ 19.50</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Zereshk Polo'</h4>
+            <p class="desc-it">Riso con crespino, zafferano, pistacchi, mandorle e scorza d'arancia. Pollo allo spiedo con salsa di pomodoro</p>
+            <p class="desc-en">Basmati rice with barberries, saffron, pistachios, almonds, orange zest. Grilled chicken with tomato sauce</p>
+            <span class="menu-badge badge-chef">Il Piatto Iconico</span>
+          </div>
+          <span class="menu-row-price">€ 25</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Giuge' Kabab</h4>
+            <p class="desc-it">Riso bianco, galletto allo spiedo con zafferano</p>
+            <p class="desc-en">White basmati rice, grilled spring chicken with saffron</p>
+          </div>
+          <span class="menu-row-price">€ 25</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Tacine Morgh <span style="font-size:0.7em;color:rgba(212,175,55,0.5);font-style:normal;margin-left:0.5rem;">(su prenotazione)</span></h4>
+            <p class="desc-it">Torta di riso con pollo, zafferano e yogurt</p>
+            <p class="desc-en">Rice cake with chicken, saffron and yogurt — available upon booking</p>
+            <span class="menu-badge badge-book">Prenota in Anticipo</span>
+          </div>
+          <span class="menu-row-price">€ 30</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Fesenjun <span style="font-size:0.7em;color:rgba(212,175,55,0.5);font-style:normal;margin-left:0.5rem;">(in stagione)</span></h4>
+            <p class="desc-it">Riso bianco con zafferano, salsa di noci, succo di melograno e pollo</p>
+            <p class="desc-en">White basmati rice with saffron, walnut sauce, pomegranate juice and chicken</p>
+            <span class="menu-badge badge-season">Stagionale</span>
+            <span class="menu-badge badge-chef">Poetico</span>
+          </div>
+          <span class="menu-row-price">€ 23</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ======== CARNE ROSSA ======== -->
+    <div class="menu-category" id="cat-rossa">
+      <div class="menu-cat-header">
+        <span class="section-label" data-i18n="cat_rossa_h">Carne Rossa</span>
+        <div class="ornament-line"><div class="gem"></div></div>
+        <p data-i18n="cat_rossa_s">Agnello e vitello grigliati alla perfezione</p>
+      </div>
+      <div class="menu-list">
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Celo' Kabab Soltani — Agnello</h4>
+            <p class="desc-it">Riso bianco con zafferano, filetto di agnello allo spiedo, macinato di agnello con cipolla</p>
+            <p class="desc-en">White basmati rice with saffron, grilled lamb fillet, minced lamb with onion skewer</p>
+            <span class="menu-badge badge-chef">Soltani</span>
+          </div>
+          <span class="menu-row-price">€ 29</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Celo' Kabab Soltani — Vitello</h4>
+            <p class="desc-it">Riso bianco con zafferano, filetto di vitello allo spiedo, macinato di agnello con cipolla</p>
+            <p class="desc-en">White basmati rice with saffron, grilled veal fillet, minced lamb with onion skewer</p>
+          </div>
+          <span class="menu-row-price">€ 28</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Celo' Kabab Barg — Agnello</h4>
+            <p class="desc-it">Riso bianco con zafferano, filetto di agnello allo spiedo</p>
+            <p class="desc-en">White basmati rice with saffron, grilled lamb fillet</p>
+          </div>
+          <span class="menu-row-price">€ 23</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Celo' Kabab Barg — Vitello</h4>
+            <p class="desc-it">Riso bianco con zafferano, filetto di vitello allo spiedo</p>
+            <p class="desc-en">White basmati rice with saffron, grilled veal fillet</p>
+          </div>
+          <span class="menu-row-price">€ 21</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Celo' Kabab Kubide</h4>
+            <p class="desc-it">Riso bianco con zafferano, macinato di agnello con cipolla allo spiedo</p>
+            <p class="desc-en">White basmati rice with saffron, minced lamb with onion skewer</p>
+          </div>
+          <span class="menu-row-price">€ 20</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Celo' Kabab Dandeh — Shish Lik</h4>
+            <p class="desc-it">Riso bianco con zafferano, costata di agnello allo spiedo</p>
+            <p class="desc-en">White basmati rice with saffron, grilled lamb chop</p>
+          </div>
+          <span class="menu-row-price">€ 27</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Celo' Kabab Soltani Dandeh</h4>
+            <p class="desc-it">Riso bianco con zafferano, costata di agnello e macinato di agnello con cipolla</p>
+            <p class="desc-en">White basmati rice with saffron, grilled lamb chop and minced lamb skewer</p>
+            <span class="menu-badge badge-chef">Gran Piatto</span>
+          </div>
+          <span class="menu-row-price">€ 32</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Ghemeh Bademjan</h4>
+            <p class="desc-it">Riso bianco con zafferano, salsa di melanzane, mezzi ceci, vitello, limone essiccato e spezie</p>
+            <p class="desc-en">Saffron rice, eggplant sauce, split chickpeas, veal, dried lemon and spices</p>
+          </div>
+          <span class="menu-row-price">€ 21</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Karafs <span style="font-size:0.7em;color:rgba(212,175,55,0.5);font-style:normal;margin-left:0.5rem;">(in stagione)</span></h4>
+            <p class="desc-it">Riso bianco con zafferano, salsa di sedano, vitello, limone, menta e spezie</p>
+            <p class="desc-en">Saffron rice, celery sauce, veal, lemon, mint and spices</p>
+            <span class="menu-badge badge-season">Stagionale</span>
+          </div>
+          <span class="menu-row-price">€ 20</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Ghormeh Sabzi</h4>
+            <p class="desc-it">Riso bianco con zafferano, salsa di verdure, fagioli rossi, vitello, limone essiccato e spezie</p>
+            <p class="desc-en">Saffron rice, vegetable sauce, red beans, veal, dried lemon and spices</p>
+            <span class="menu-badge badge-chef">Nazionale Iraniano</span>
+          </div>
+          <span class="menu-row-price">€ 21</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ======== BEVANDE ======== -->
+    <div class="menu-category" id="cat-bevande">
+      <div class="menu-cat-header">
+        <span class="section-label" data-i18n="cat_bev_h">Bevande</span>
+        <div class="ornament-line"><div class="gem"></div></div>
+        <p data-i18n="cat_bev_s">Dal doogh tradizionale ai vini della casa</p>
+      </div>
+      <div class="menu-list">
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Dugh</h4>
+            <p class="desc-it">Bevanda analcolica a base di yogurt e spezie</p>
+            <p class="desc-en">Non-alcoholic yogurt-based drink with spices — Iran's national drink</p>
+            <span class="menu-badge badge-chef">Drink Persiano</span>
+          </div>
+          <span class="menu-row-price">€ 8</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Acqua Minerale 1L</h4>
+            <p class="desc-en">Mineral water 1 litre</p>
+          </div>
+          <span class="menu-row-price">€ 2.50</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Bibite in Lattina 0,33L</h4>
+            <p class="desc-en">Canned soft drinks</p>
+          </div>
+          <span class="menu-row-price">€ 2.50</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Vino Rosso Sfuso</h4>
+            <p class="desc-it">Cabernet Veneto IGT</p>
+            <p class="desc-en">House red wine — Cabernet Veneto IGT</p>
+          </div>
+          <span class="menu-row-price">€ 7 / € 13</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Vino Bianco Sfuso</h4>
+            <p class="desc-it">Vino bianco frizzante (Prosecco)</p>
+            <p class="desc-en">Sparkling white wine — Prosecco</p>
+          </div>
+          <span class="menu-row-price">€ 8 / € 15</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Birra</h4>
+            <p class="desc-en">Small / Medium beer</p>
+          </div>
+          <span class="menu-row-price">€ 3.50 / € 5</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ======== DOLCI ======== -->
+    <div class="menu-category" id="cat-dolci">
+      <div class="menu-cat-header">
+        <span class="section-label" data-i18n="cat_dol_h">Dolci & Bevande Calde</span>
+        <div class="ornament-line"><div class="gem"></div></div>
+        <p data-i18n="cat_dol_s">Dolci profumati di acqua di rose, cardamomo e cannella</p>
+      </div>
+      <div class="menu-list">
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Baghlava</h4>
+            <p class="desc-it">Pasta di mandorle, noci, pistacchi, cardamomo, cannella e acqua di rose. Pasta sfoglia e sciroppo di miele</p>
+            <p class="desc-en">Almond, walnut and pistachio pastry with cardamom, cinnamon, rose water, filo dough and honey syrup</p>
+            <span class="menu-badge badge-chef">Dolce Persiano</span>
+            <span class="menu-badge badge-veg">Vegetariano</span>
+          </div>
+          <span class="menu-row-price">€ 4</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Ciai — Tè Persiano</h4>
+            <p class="desc-it">Tè nero persiano tradizionale</p>
+            <p class="desc-en">Traditional Persian black tea</p>
+          </div>
+          <span class="menu-row-price">€ 1.50</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Caffè</h4>
+            <p class="desc-en">Espresso</p>
+          </div>
+          <span class="menu-row-price">€ 1.50</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Caffè Corretto</h4>
+            <p class="desc-en">Spiked espresso</p>
+          </div>
+          <span class="menu-row-price">€ 2.50</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Cappuccino</h4>
+          </div>
+          <span class="menu-row-price">€ 2</span>
+        </div>
+
+        <div class="menu-row reveal">
+          <div class="menu-row-info">
+            <h4>Coperto</h4>
+            <p class="desc-it">Tè persiano illimitato incluso</p>
+            <p class="desc-en">Cover charge — unlimited Persian tea included</p>
+          </div>
+          <span class="menu-row-price">€ 2.50</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ======== PRANZO ======== -->
+    <div class="menu-category" id="cat-pranzo">
+      <div class="menu-cat-header">
+        <span class="section-label" data-i18n="cat_pranzo_h">Pranzo Speciale</span>
+        <div class="ornament-line"><div class="gem"></div></div>
+        <p data-i18n="cat_pranzo_s">Una portata a scelta con riso allo zafferano</p>
+      </div>
+
+      <div class="pranzo-box reveal">
+        <div class="pranzo-price-badge" data-i18n="pranzo_price_badge">€ 15</div>
+        <h2 style="font-style:italic;" data-i18n="cat_pranzo_h">Pranzo Speciale</h2>
+        <p class="lead" data-i18n="pranzo_lead">Una portata a scelta, accompagnata da un piatto di riso con zafferano.</p>
+        <p style="font-size:0.8rem;color:var(--gold);letter-spacing:0.12em;text-transform:uppercase;font-weight:700;margin-bottom:1.5rem;" data-i18n="pranzo_avail">Disponibile Venerdì, Sabato e Domenica · 11:30 – 14:30</p>
+
+        <div class="pranzo-items">
+          <div class="pranzo-item">Dolmeh<span style="font-size:0.8rem;color:rgba(212,175,55,0.5);margin-left:0.4rem;">· stuffed vine leaves</span></div>
+          <div class="pranzo-item">Kashk-e Bademjan<span style="font-size:0.8rem;color:rgba(212,175,55,0.5);margin-left:0.4rem;">· fried eggplants</span></div>
+          <div class="pranzo-item">Kuku Sabzi<span style="font-size:0.8rem;color:rgba(212,175,55,0.5);margin-left:0.4rem;">· vegetable omelette</span></div>
+          <div class="pranzo-item">Mirza Ghasemi<span style="font-size:0.8rem;color:rgba(212,175,55,0.5);margin-left:0.4rem;">· baked eggplant</span></div>
+          <div class="pranzo-item">Celo' Barg<span style="font-size:0.8rem;color:rgba(212,175,55,0.5);margin-left:0.4rem;">· grilled chicken</span></div>
+          <div class="pranzo-item">Zereshk Polo'<span style="font-size:0.8rem;color:rgba(212,175,55,0.5);margin-left:0.4rem;">· chicken with barberry rice</span></div>
+          <div class="pranzo-item">Celo' Kabab Kubide<span style="font-size:0.8rem;color:rgba(212,175,55,0.5);margin-left:0.4rem;">· minced lamb skewer</span></div>
+          <div class="pranzo-item">Ghormeh Sabzi<span style="font-size:0.8rem;color:rgba(212,175,55,0.5);margin-left:0.4rem;">· herb & bean stew</span></div>
+          <div class="pranzo-item">Ghemeh Bademjan<span style="font-size:0.8rem;color:rgba(212,175,55,0.5);margin-left:0.4rem;">· eggplant stew</span></div>
+          <div class="pranzo-item">Fesenjun<span style="font-size:0.8rem;color:rgba(212,175,55,0.5);margin-left:0.4rem;">· walnut & pomegranate</span></div>
+          <div class="pranzo-item">Karafs<span style="font-size:0.8rem;color:rgba(212,175,55,0.5);margin-left:0.4rem;">· celery stew (seasonal)</span></div>
+        </div>
+
+        <div style="margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid rgba(212,175,55,0.1);">
+          <p style="font-size:0.85rem;color:var(--text-dim);font-style:italic;">
+            Incluso: bevanda analcolica (acqua o bibita) · Cover: € 2.50 (tè persiano incluso)
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <h2 data-i18n="cta_h2">Pronti a varcare la soglia?</h2>
+      <div class="ornament-line"><div class="gem"></div></div>
+      <p data-i18n="cta_p">Un tavolo sul canale vi aspetta.</p>
+      <div class="cta-buttons" style="margin-top:2rem;">
+        <a href="contact.html" class="btn btn-gold" data-i18n="cta_btn1">Prenota Ora</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="Darvish-logo.jpeg" alt="Darvish" class="footer-logo" />
+        <span class="brand-name">Darvish</span>
+        <p data-i18n="foot_tag">Un piccolo gioiello persiano nel cuore di Padova.</p>
+        <div class="social-row">
+          <a href="https://www.instagram.com/ristorante_darvish/" target="_blank" class="social-ico">📷</a>
+          <a href="https://www.ristorantedarvish.com" target="_blank" class="social-ico">🌐</a>
+          <a href="tel:+39049664048" class="social-ico">📞</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="foot_links">Link Utili</h4>
+        <ul>
+          <li><a href="Darvish.html"   data-i18n="nav_home">Home</a></li>
+          <li><a href="menu.html"    data-i18n="nav_menu">Menu</a></li>
+          <li><a href="about.html"   data-i18n="nav_about">Chi Siamo</a></li>
+          <li><a href="gallery.html" data-i18n="nav_gallery">Galleria</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contatti</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="foot_hours">Orari</h4>
+        <p data-i18n="foot_h1">Lun–Gio: 18:30–23:30</p>
+        <p data-i18n="foot_h2">Ven: 11:30–14:30 / 18:30–23:30</p>
+        <p data-i18n="foot_h3">Sab: 11:30–14:30 / 18:30–23:30</p>
+        <p data-i18n="foot_h4">Dom: 11:30–14:30 / 18:30–23:30</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="foot_cont">Contatti</h4>
+        <p>Riviera Albertino Mussato 85<br>35139, Padova (PD)</p>
+        <p style="margin-top:0.5rem;"><a href="tel:+39049664048" style="color:rgba(240,230,211,0.4);">+39 049 664048</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="foot_copy">© 2025 Ristorante Persiano Darvish · Padova</p>
+      <div class="footer-bottom-links">
+        <a href="#" data-i18n="foot_priv">Privacy</a>
+        <a href="#" data-i18n="foot_terms">Termini</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="Darvish.js"></script>
+</body>
+</html>

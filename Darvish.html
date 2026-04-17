@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ristorante Persiano Darvish — Cucina persiana autentica a Padova, Riviera Mussato 85." />
+  <title>Ristorante Persiano Darvish — Padova</title>
+  <link rel="stylesheet" href="Darvish.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+<!-- ========================================================
+     NAVBAR
+     ======================================================== -->
+<nav id="navbar">
+  <div class="nav-container">
+
+    <a href="Darvish.html" class="nav-logo">
+      <img src="Darvish-logo.jpeg" alt="Darvish Logo" class="nav-logo-img" />
+      <div class="nav-logo-text">
+        <span class="logo-name">Darvish</span>
+        <span class="logo-tagline">Ristorante Persiano</span>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="Darvish.html"   data-i18n="nav_home"    class="active">Home</a></li>
+      <li><a href="menu.html"    data-i18n="nav_menu">Menu</a></li>
+      <li><a href="about.html"   data-i18n="nav_about">Chi Siamo</a></li>
+      <li><a href="gallery.html" data-i18n="nav_gallery">Galleria</a></li>
+      <li><a href="contact.html" data-i18n="nav_contact">Contatti</a></li>
+      <li><a href="contact.html" class="nav-reserve" data-i18n="nav_reserve">Prenota</a></li>
+    </ul>
+
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="it">IT</button>
+        <button class="lang-btn"        data-lang="en">EN</button>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Mobile overlay -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="Darvish.html"   data-i18n="nav_home">Home</a>
+  <a href="menu.html"    data-i18n="nav_menu">Menu</a>
+  <a href="about.html"   data-i18n="nav_about">Chi Siamo</a>
+  <a href="gallery.html" data-i18n="nav_gallery">Galleria</a>
+  <a href="contact.html" data-i18n="nav_contact">Contatti</a>
+  <a href="contact.html" class="btn btn-gold" data-i18n="nav_reserve">Prenota</a>
+  <div class="mobile-lang">
+    <button class="lang-btn active" data-lang="it">IT</button>
+    <button class="lang-btn"        data-lang="en">EN</button>
+  </div>
+</div>
+
+<!-- ========================================================
+     HERO
+     ======================================================== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-vignette"></div>
+
+  <div class="hero-content">
+    <span class="hero-persian-text" data-i18n="hero_sup">Ristorante Persiano · Padova</span>
+
+    <img src="Darvish-logo.jpeg" alt="Darvish" class="hero-logo" />
+
+    <h1>
+      <span data-i18n="hero_h1a">Darvish</span>
+    </h1>
+
+    <div class="ornament-line" style="margin:1.4rem auto;max-width:300px;">
+      <div class="gem"></div>
+    </div>
+
+    <p class="hero-tagline" data-i18n="hero_tagline">Un viaggio nell'anima della Persia</p>
+
+    <div class="hero-cta">
+      <a href="menu.html"    class="btn btn-gold"   data-i18n="hero_btn1">Scopri il Menu</a>
+      <a href="contact.html" class="btn btn-ghost"  data-i18n="hero_btn2">Prenota un Tavolo</a>
+    </div>
+  </div>
+
+  <div class="hero-quote-strip">
+    <p data-i18n="hero_rumi">"Wherever you are, whatever you do, be in love." — Rumi</p>
+  </div>
+</section>
+
+<!-- ========================================================
+     INTRO
+     ======================================================== -->
+<section class="intro-section">
+  <div class="container">
+    <div class="intro-grid">
+
+      <!-- Image -->
+      <div class="intro-img-wrap reveal-l">
+        <img
+          class="intro-img-main"
+          src="zereshkpolo.jpg"
+          alt="Zereshk Polo' — il piatto iconico di Darvish"
+        />
+        <div class="intro-img-caption">Zereshk Polo' — riso, barberry, zafferano, melograno</div>
+      </div>
+
+      <!-- Text -->
+      <div class="reveal-r">
+        <span class="section-label" data-i18n="intro_label">La Nostra Essenza</span>
+        <div class="ornament-line" style="justify-content:flex-start;margin:0.8rem 0 1.2rem;">
+          <div class="gem"></div>
+        </div>
+        <h2 style="font-style:italic;" data-i18n="intro_h2">Dove la Persia incontra l'Italia</h2>
+        <p style="margin-top:1.5rem;" data-i18n="intro_p1">Lungo la Riviera Albertino Mussato, dove l'acqua del canale riflette le luci della notte...</p>
+        <p data-i18n="intro_p2">La parola دَرویش — Darvish — evoca il cercatore mistico...</p>
+
+        <div class="intro-pull">
+          <span data-i18n="intro_quote">"Vieni, chiunque tu sia..."</span>
+          <cite data-i18n="intro_quote_src">— Rumi, Masnavi</cite>
+        </div>
+
+        <p data-i18n="intro_p3">Ogni piatto che esce dalla nostra cucina è un atto d'amore...</p>
+
+        <a href="about.html" class="btn btn-ghost" style="margin-top:2rem;" data-i18n="intro_cta">Scopri la Nostra Storia</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     FEATURES STRIP
+     ======================================================== -->
+<section class="features-strip pattern-tile">
+  <div class="container">
+    <div class="features-grid">
+      <div class="feature-item reveal">
+        <span class="feature-icon">🌸</span>
+        <h4 data-i18n="f1_t">Autenticità</h4>
+        <p data-i18n="f1_d">Ingredienti importati dall'Iran</p>
+      </div>
+      <div class="feature-item reveal" style="transition-delay:.1s">
+        <span class="feature-icon">📜</span>
+        <h4 data-i18n="f2_t">Tradizione</h4>
+        <p data-i18n="f2_d">Ricette di generazione in generazione</p>
+      </div>
+      <div class="feature-item reveal" style="transition-delay:.2s">
+        <span class="feature-icon">🌊</span>
+        <h4 data-i18n="f3_t">Atmosfera</h4>
+        <p data-i18n="f3_d">Sul canale, luci soffuse, vista sull'acqua</p>
+      </div>
+      <div class="feature-item reveal" style="transition-delay:.3s">
+        <span class="feature-icon">🫖</span>
+        <h4 data-i18n="f4_t">Ta'arof</h4>
+        <p data-i18n="f4_d">Ospitalità persiana — ogni ospite è sacro</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     FEATURED DISHES
+     ======================================================== -->
+<section class="dishes-section">
+  <div class="container">
+    <div class="sec-header reveal">
+      <span class="section-label" data-i18n="dishes_label">Dall'antica Persia</span>
+      <h2 data-i18n="dishes_h2">I Nostri Piatti Iconici</h2>
+      <div class="ornament-line"><div class="gem"></div></div>
+      <p class="lead" data-i18n="dishes_sub">Un assaggio dell'anima persiana</p>
+    </div>
+
+    <div class="dishes-grid">
+
+      <!-- Zereshk Polo -->
+      <div class="dish-card reveal" style="transition-delay:.05s">
+        <div class="dish-img-wrap">
+          <img src="zereshkpolo.jpg" alt="Zereshk Polo'" />
+          <span class="dish-cat-tag" data-i18n="d1_cat">Carne Bianca</span>
+        </div>
+        <div class="dish-body">
+          <h3 data-i18n="d1_name">Zereshk Polo'</h3>
+          <p data-i18n="d1_desc">Riso basmati con barberry, zafferano, pistacchi, mandorle, scorza d'arancia e pollo.</p>
+          <div class="dish-price-row">
+            <span class="dish-price">€ 25</span>
+            <span class="menu-badge badge-chef">Chef's Choice</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tacine Morgh -->
+      <div class="dish-card reveal" style="transition-delay:.15s">
+        <div class="dish-img-wrap">
+          <img
+            src="tahchin.jpg"
+            alt="Tacine Morgh"
+            loading="lazy"
+          />
+          <span class="dish-cat-tag" data-i18n="d2_cat">Su Prenotazione</span>
+        </div>
+        <div class="dish-body">
+          <h3 data-i18n="d2_name">Tacine Morgh</h3>
+          <p data-i18n="d2_desc">Torta di riso con pollo, zafferano e yogurt — ore di preparazione.</p>
+          <div class="dish-price-row">
+            <span class="dish-price">€ 30</span>
+            <span class="menu-badge badge-book">Prenota</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fesenjun -->
+      <div class="dish-card reveal" style="transition-delay:.25s">
+        <div class="dish-img-wrap">
+          <img
+            src="Fesenjan.jpg"
+            alt="Fesenjun"
+            loading="lazy"
+          />
+          <span class="dish-cat-tag" data-i18n="d3_cat">Stagionale</span>
+        </div>
+        <div class="dish-body">
+          <h3 data-i18n="d3_name">Fesenjun</h3>
+          <p data-i18n="d3_desc">Pollo in salsa di noci tostate e succo di melograno — dolce, aspro, profondo.</p>
+          <div class="dish-price-row">
+            <span class="dish-price">€ 23</span>
+            <span class="menu-badge badge-season">Stagionale</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center" style="margin-top:3.5rem;">
+      <a href="menu.html" class="btn btn-gold" data-i18n="viewmenu">Sfoglia il Menu Completo</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================================
+     CULTURAL SECTION
+     ======================================================== -->
+<section class="culture-section pattern-tile">
+  <div class="container">
+    <div class="culture-inner">
+
+      <div class="reveal-l">
+        <span class="section-label" data-i18n="cul_label">Più che un Ristorante</span>
+        <div class="ornament-line" style="justify-content:flex-start;margin:0.8rem 0 1.2rem;"><div class="gem"></div></div>
+        <h2 style="font-style:italic;" data-i18n="cul_h2">Un'immersione nella civiltà persiana</h2>
+        <p style="margin-top:1.5rem;" data-i18n="cul_p1">La Persia non è solo un luogo geografico — è uno stato dell'anima...</p>
+        <p data-i18n="cul_p2">Da Darvish troverete i colori dei mosaici di Isfahan...</p>
+
+        <div class="culture-pillars">
+          <div class="pillar">
+            <div class="pillar-dot">🎨</div>
+            <div class="pillar-info">
+              <h4 data-i18n="cp1_t">Arte & Decorazione</h4>
+              <p data-i18n="cp1_d">Arazzi, legno, lampadari in stile orientale</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-dot">🥗</div>
+            <div class="pillar-info">
+              <h4 data-i18n="cp2_t">Cucina Leggera</h4>
+              <p data-i18n="cp2_d">Nessun fritto pesante: carne e pesce leggeri</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-dot">🌊</div>
+            <div class="pillar-info">
+              <h4 data-i18n="cp3_t">Posizione Romantica</h4>
+              <p data-i18n="cp3_d">Sul canale, tavoli all'aperto d'estate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="culture-images reveal-r">
+        <img src="Darvish1.webp" alt="Isfahan" loading="lazy" />
+        <img src="DarvishSera.jpg" alt="Persian pattern" loading="lazy" />
+        <img src="Darvish2.webp" alt="Persian tea" loading="lazy" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     REVIEWS
+     ======================================================== -->
+<section class="reviews-section">
+  <div class="container">
+    <div class="sec-header reveal">
+      <span class="section-label" data-i18n="rev_label">Voci dei Nostri Ospiti</span>
+      <h2 data-i18n="rev_h2">Quello che dicono di noi</h2>
+      <div class="ornament-line"><div class="gem"></div></div>
+      <p class="lead" data-i18n="rev_sub">Recensioni reali su Google e TripAdvisor</p>
+    </div>
+
+    <div class="reviews-grid">
+
+      <div class="review-card reveal" style="transition-delay:.05s">
+        <div class="review-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="review-text" data-i18n="rev1_text">"Appena varcato la soglia la magia si manifesta..."</p>
+        <div class="review-author">
+          <div class="review-avatar">G</div>
+          <div>
+            <div class="review-name" data-i18n="rev1_name">Giulia M.</div>
+            <div class="review-source" data-i18n="rev1_src">Google</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal" style="transition-delay:.1s">
+        <div class="review-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="review-text" data-i18n="rev2_text">"Un autentico piccolo angolo di Persia..."</p>
+        <div class="review-author">
+          <div class="review-avatar">L</div>
+          <div>
+            <div class="review-name" data-i18n="rev2_name">Lorenzo B.</div>
+            <div class="review-source" data-i18n="rev2_src">Google</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal" style="transition-delay:.15s">
+        <div class="review-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="review-text" data-i18n="rev3_text">"I piatti sono spettacolari, porzioni abbondanti..."</p>
+        <div class="review-author">
+          <div class="review-avatar">C</div>
+          <div>
+            <div class="review-name" data-i18n="rev3_name">Chiara F.</div>
+            <div class="review-source" data-i18n="rev3_src">Google</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="review-rating-total reveal">
+      <div class="big-score">4.4</div>
+      <div class="review-stars" style="justify-content:center;gap:4px;margin:0.5rem 0;">
+        <span style="color:var(--gold);font-size:1.3rem;">★</span>
+        <span style="color:var(--gold);font-size:1.3rem;">★</span>
+        <span style="color:var(--gold);font-size:1.3rem;">★</span>
+        <span style="color:var(--gold);font-size:1.3rem;">★</span>
+        <span style="color:rgba(212,175,55,0.4);font-size:1.3rem;">★</span>
+      </div>
+      <p data-i18n="rev_score_label">Valutazione Media · Google Maps</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================================
+     CTA
+     ======================================================== -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <span class="section-label" style="margin-bottom:1rem;display:block;">دَرویش · Darvish</span>
+      <h2 data-i18n="cta_h2">Pronti a varcare la soglia?</h2>
+      <div class="ornament-line"><div class="gem"></div></div>
+      <p data-i18n="cta_p">Un tavolo sul canale vi aspetta...</p>
+      <div class="cta-buttons" style="margin-top:2rem;">
+        <a href="contact.html" class="btn btn-gold"   data-i18n="cta_btn1">Prenota Ora</a>
+        <a href="menu.html"    class="btn btn-ghost"  data-i18n="cta_btn2">Vedi il Menu</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     FOOTER
+     ======================================================== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <img src="Darvish-logo.jpeg" alt="Darvish" class="footer-logo" />
+        <span class="brand-name">Darvish</span>
+        <p data-i18n="foot_tag">Un piccolo gioiello persiano nel cuore di Padova.</p>
+        <div class="social-row">
+          <a href="https://www.instagram.com/ristorante_darvish/" target="_blank" class="social-ico" title="Instagram">📷</a>
+          <a href="https://www.ristorantedarvish.com" target="_blank" class="social-ico" title="Sito Web">🌐</a>
+          <a href="tel:+39049664048" class="social-ico" title="Telefono">📞</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="foot_links">Link Utili</h4>
+        <ul>
+          <li><a href="Darvish.html"   data-i18n="nav_home">Home</a></li>
+          <li><a href="menu.html"    data-i18n="nav_menu">Menu</a></li>
+          <li><a href="about.html"   data-i18n="nav_about">Chi Siamo</a></li>
+          <li><a href="gallery.html" data-i18n="nav_gallery">Galleria</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contatti</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="foot_hours">Orari</h4>
+        <p data-i18n="foot_h1">Lun–Gio: 18:30–23:30</p>
+        <p data-i18n="foot_h2">Ven: 11:30–14:30 / 18:30–23:30</p>
+        <p data-i18n="foot_h3">Sab: 11:30–14:30 / 18:30–23:30</p>
+        <p data-i18n="foot_h4">Dom: 11:30–14:30 / 18:30–23:30</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="foot_cont">Contatti</h4>
+        <p>Riviera Albertino Mussato 85<br>35139, Padova (PD)</p>
+        <p style="margin-top:0.5rem;">
+          <a href="tel:+39049664048" style="color:rgba(240,230,211,0.4);">+39 049 664048</a>
+        </p>
+        <p style="margin-top:0.4rem;">
+          <a href="https://www.ristorantedarvish.com" target="_blank" style="color:rgba(240,230,211,0.4);">ristorantedarvish.com</a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p data-i18n="foot_copy">© 2025 Ristorante Persiano Darvish · Padova</p>
+      <div class="footer-bottom-links">
+        <a href="#" data-i18n="foot_priv">Privacy</a>
+        <a href="#" data-i18n="foot_terms">Termini</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="Darvish.js"></script>
+</body>
+</html>

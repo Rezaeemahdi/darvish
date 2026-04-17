@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Galleria fotografica — Ristorante Persiano Darvish, Padova." />
+  <title>Galleria — Ristorante Persiano Darvish</title>
+  <link rel="stylesheet" href="Darvish.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+<nav id="navbar"><div class="nav-container">
+  <a href="Darvish.html" class="nav-logo">
+    <img src="Darvish-logo.jpeg" alt="Darvish" class="nav-logo-img" />
+    <div class="nav-logo-text"><span class="logo-name">Darvish</span><span class="logo-tagline">Ristorante Persiano</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="Darvish.html" data-i18n="nav_home">Home</a></li>
+    <li><a href="menu.html" data-i18n="nav_menu">Menu</a></li>
+    <li><a href="about.html" data-i18n="nav_about">Chi Siamo</a></li>
+    <li><a href="gallery.html" data-i18n="nav_gallery" class="active">Galleria</a></li>
+    <li><a href="contact.html" data-i18n="nav_contact">Contatti</a></li>
+    <li><a href="contact.html" class="nav-reserve" data-i18n="nav_reserve">Prenota</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:1rem;">
+    <div class="lang-switcher"><button class="lang-btn active" data-lang="it">IT</button><button class="lang-btn" data-lang="en">EN</button></div>
+    <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
+  </div>
+</div></nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="Darvish.html" data-i18n="nav_home">Home</a><a href="menu.html" data-i18n="nav_menu">Menu</a>
+  <a href="about.html" data-i18n="nav_about">Chi Siamo</a><a href="gallery.html" data-i18n="nav_gallery">Galleria</a>
+  <a href="contact.html" data-i18n="nav_contact">Contatti</a>
+  <a href="contact.html" class="btn btn-gold" data-i18n="nav_reserve">Prenota</a>
+  <div class="mobile-lang"><button class="lang-btn active" data-lang="it">IT</button><button class="lang-btn" data-lang="en">EN</button></div>
+</div>
+
+<header class="page-hero ph-gallery">
+  <div class="container page-hero-content">
+    <span class="section-label" style="color:var(--gold);display:block;margin-bottom:0.6rem;">دَرویش</span>
+    <h1 data-i18n="gal_h1">Galleria</h1>
+    <p data-i18n="gal_sub">Immagini di un viaggio tra sapori, luci e cultura persiana</p>
+  </div>
+</header>
+
+<main class="gallery-section">
+  <div class="container">
+    <div class="gallery-filters reveal">
+      <button class="filter-btn active" data-filter="all"  data-i18n="filt_all">Tutto</button>
+      <button class="filter-btn"        data-filter="food" data-i18n="filt_food">Cucina</button>
+      <button class="filter-btn"        data-filter="int"  data-i18n="filt_int">Interni</button>
+      <button class="filter-btn"        data-filter="cult" data-i18n="filt_cult">Cultura</button>
+    </div>
+
+    <div class="gallery-grid">
+
+      <!-- Real food photo -->
+      <div class="gallery-item wide reveal" data-cat="food">
+        <img src="zereshkpolo.jpg" alt="Zereshk Polo' — il piatto iconico" />
+        <div class="gallery-overlay">
+          <h4>Zereshk Polo' — la nostra eccellenza</h4>
+          <span>Cucina</span>
+        </div>
+      </div>
+
+      <div class="gallery-item tall reveal" data-cat="int" style="transition-delay:.05s">
+        <img src="DarvishSera.jpg" alt="Atmosfera serale" loading="lazy" />
+        <div class="gallery-overlay"><h4>Atmosfera Serale</h4><span>Interni</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-cat="food" style="transition-delay:.08s">
+        <img src="ghormehsabzi2.webp" alt="Stufato persiano" loading="lazy" />
+        <div class="gallery-overlay"><h4>Ghormeh Sabzi</h4><span>Cucina</span></div>
+      </div>
+
+    
+     
+
+      <div class="gallery-item reveal" data-cat="food" style="transition-delay:.14s">
+        <img src="Darvish+kabob.jpeg" alt="Kebab alla griglia" loading="lazy" />
+        <div class="gallery-overlay"><h4>Kabab — arte del fuoco</h4><span>Cucina</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-cat="cult" style="transition-delay:.16s">
+        <img src="Darvish2.webp" alt="Tè persiano" loading="lazy" />
+        <div class="gallery-overlay"><h4>Il Rito del Tè</h4><span>Cultura</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-cat="int" style="transition-delay:.2s">
+        <img src="Darvish1.webp" alt="Tavolo sul canale" loading="lazy" />
+        <div class="gallery-overlay"><h4>Sul Canale di Padova</h4><span>Interni</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-cat="food" style="transition-delay:.22s">
+        <img src="KASHK-E-BADEMJAN.webp" alt="Antipasti" loading="lazy" />
+        <div class="gallery-overlay"><h4>Antipasti Misti</h4><span>Cucina</span></div>
+      </div>
+
+      <div class="gallery-item wide reveal" data-cat="int" style="transition-delay:.24s">
+        <img src="DarvishSera.jpg" alt="Sala ristorante" loading="lazy" />
+        <div class="gallery-overlay"><h4>Sala Principale — serata</h4><span>Interni</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-cat="food" style="transition-delay:.26s">
+        <img src="Darvish5.webp" alt="Riso allo zafferano" loading="lazy" />
+        <div class="gallery-overlay"><h4>Riso allo Zafferano</h4><span>Cucina</span></div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close">✕</button>
+  <img id="lightbox-img" src="" alt="" />
+</div>
+
+<section class="cta-section">
+  <div class="container"><div class="cta-inner reveal">
+    <h2 data-i18n="cta_h2">Pronti a varcare la soglia?</h2>
+    <div class="ornament-line"><div class="gem"></div></div>
+    <p data-i18n="cta_p">Un tavolo sul canale vi aspetta.</p>
+    <div class="cta-buttons" style="margin-top:2rem;">
+      <a href="contact.html" class="btn btn-gold" data-i18n="cta_btn1">Prenota Ora</a>
+      <a href="menu.html" class="btn btn-ghost" data-i18n="cta_btn2">Vedi il Menu</a>
+    </div>
+  </div></div>
+</section>
+
+<footer><div class="container">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="Darvish-logo.jpeg" alt="Darvish" class="footer-logo" />
+      <span class="brand-name">Darvish</span>
+      <p data-i18n="foot_tag">Un piccolo gioiello persiano nel cuore di Padova.</p>
+      <div class="social-row">
+        <a href="https://www.instagram.com/ristorante_darvish/" target="_blank" class="social-ico">📷</a>
+        <a href="https://www.ristorantedarvish.com" target="_blank" class="social-ico">🌐</a>
+        <a href="tel:+39049664048" class="social-ico">📞</a>
+      </div>
+    </div>
+    <div class="footer-col"><h4 data-i18n="foot_links">Link Utili</h4><ul>
+      <li><a href="Darvish.html" data-i18n="nav_home">Home</a></li><li><a href="menu.html" data-i18n="nav_menu">Menu</a></li>
+      <li><a href="about.html" data-i18n="nav_about">Chi Siamo</a></li><li><a href="gallery.html" data-i18n="nav_gallery">Galleria</a></li>
+      <li><a href="contact.html" data-i18n="nav_contact">Contatti</a></li>
+    </ul></div>
+    <div class="footer-col"><h4 data-i18n="foot_hours">Orari</h4>
+      <p data-i18n="foot_h1">Lun–Gio: 18:30–23:30</p><p data-i18n="foot_h2">Ven: 11:30–14:30 / 18:30–23:30</p>
+      <p data-i18n="foot_h3">Sab: 11:30–14:30 / 18:30–23:30</p><p data-i18n="foot_h4">Dom: 11:30–14:30 / 18:30–23:30</p>
+    </div>
+    <div class="footer-col"><h4 data-i18n="foot_cont">Contatti</h4>
+      <p>Riviera Albertino Mussato 85<br>35139, Padova (PD)</p>
+      <p style="margin-top:.5rem;"><a href="tel:+39049664048" style="color:rgba(240,230,211,.4);">+39 049 664048</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p data-i18n="foot_copy">© 2025 Ristorante Persiano Darvish · Padova</p>
+    <div class="footer-bottom-links"><a href="#" data-i18n="foot_priv">Privacy</a><a href="#" data-i18n="foot_terms">Termini</a></div>
+  </div>
+</div></footer>
+
+<script src="Darvish.js"></script>
+</body>
+</html>
